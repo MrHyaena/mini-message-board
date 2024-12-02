@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(62, 60, 70);
+  color: white;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
+}
+
+.messageBoard {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 100px;
+}
+
+.messages {
+  background-color: rgb(30, 29, 51);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(30, 29, 51);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  margin-top: 20px;
+}

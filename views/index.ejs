@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <div class="messageBoard">
+      <div class="messages">
+        <h2>Messages</h2>
+        <% messages.forEach(item => { %>
+        <div>
+          <h3 class="name"><%= item.user %></h3>
+          <p class="name"><%= item.text %></p>
+          <p class="name"><%= item.added %></p>
+        </div>
+        <% }) %>
+      </div>
+      <form method="POST" action="/new">
+        <h2>Send message</h2>
+        <label for="text">Message</label>
+        <input type="text" id="text" name="text" required />
+        <label for="nane">Username</label>
+        <input type="text" id="name" name="name" required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
